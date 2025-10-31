@@ -1,0 +1,5 @@
+
+{
+  "name": "WeatherWing",
+  "description": "An elegant weather application that provides real-time weather data, a dynamic day/night theme, and an interactive 3D globe to visualize city locations. Powered by React and Google's Gemini API."
+}

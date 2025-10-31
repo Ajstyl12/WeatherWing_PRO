@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherWing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              day: {
+                background: '#87CEEB',
+                foreground: '#001e3a',
+                card: 'rgba(255, 255, 255, 0.6)',
+                card_foreground: '#001e3a',
+              },
+              night: {
+                background: '#0b1424',
+                foreground: '#e0e0e0',
+                card: 'rgba(20, 30, 50, 0.7)',
+                card_foreground: '#e0e0e0',
+              }
+            },
+            backdropFilter: {
+                'none': 'none',
+                'blur': 'blur(20px)',
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.552.0",
+    "react/": "https://aistudiocdn.com/react@^18.2.0/",
+    "react": "https://aistudiocdn.com/react@^18.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^18.2.0/",
+    "react-globe.gl": "https://unpkg.com/react-globe.gl@2.36.0/dist/react-globe.gl.mjs",
+    "three": "https://unpkg.com/three@0.165.0/build/three.module.js",
+    "three-globe": "https://unpkg.com/three-globe@2.31.1/dist/three-globe.mjs"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
